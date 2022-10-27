@@ -169,9 +169,15 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
+        name: ${{ env.DATE }}_${{ env.FILE_NAME }}
         body_path: release.txt
-        files: ${{ env.FIRMWARE }}/*
-
+        files: |
+          ${{ env.FIRMWARE }}/*
+          #${{ env.FIRMWARE }}/*.itb
+          #${{ env.FIRMWARE }}/*.ubi
+          #${{ env.FIRMWARE }}/*.bin
+          #${{ env.FIRMWARE }}/*.tar.gz
+         
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
