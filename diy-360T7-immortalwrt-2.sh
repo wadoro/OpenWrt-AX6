@@ -26,7 +26,7 @@ sed -i 's/V4UetPzk$CYXluq4wUazHjmCDBCqXF./cEuy4sGe$z49lYVt0VI05HMaYKsAvP1/g' pac
 #sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=$(shell TZ=UTC-8 date "+%Y%m%d")-$(VERSION_DIST_SANITIZED)/g' include/image.mk
 
 #5.更换lede源码中自带argon主题
-rm -rf feeds/luci/themes/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon 
+#rm -rf feeds/luci/themes/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
