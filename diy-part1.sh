@@ -21,3 +21,4 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
 git clone https://github.com/esirplayground/luci-app-v2ray-server.git package/v2ray
 
+echo "203.107.6.88 time.android.com" >> package/base-files/files/etc/hosts
