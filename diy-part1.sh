@@ -20,5 +20,3 @@
 #echo 'src-git Boos4721 https://github.com/Boos4721/OpenWrt-Packages' >>feeds.conf.default
 echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
 git clone https://github.com/esirplayground/luci-app-v2ray-server.git package/v2ray
-
-echo "203.107.6.88 time.android.com" >> package/base-files/files/etc/hosts
